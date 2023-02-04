@@ -406,6 +406,11 @@ public class MainMenu extends javax.swing.JFrame {
         patientTablePane.setViewportView(patientTable);
 
         addPatientBtn1.setText("Add Patient");
+        addPatientBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addPatientBtn1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout patientsPanelLayout = new javax.swing.GroupLayout(patientsPanel);
         patientsPanel.setLayout(patientsPanelLayout);
@@ -999,6 +1004,10 @@ public class MainMenu extends javax.swing.JFrame {
     private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
         System.exit(0);
     }//GEN-LAST:event_formWindowClosed
+
+    private void addPatientBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addPatientBtn1ActionPerformed
+     new AddingPatient(null,true).setVisible(true);
+    }//GEN-LAST:event_addPatientBtn1ActionPerformed
 
     /**
      * @param args the command line arguments

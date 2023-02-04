@@ -31,7 +31,7 @@ public class PatientsRecord {
     private String year;
     private String adviser;
     private String chiefComplaints;
-    private String[] alergies;
+    private String alergies;
     private String[] vitalSigns;
     private int painScale;
     private String lastDay_InCampus;

@@ -96,7 +96,7 @@ public class MainMenu extends javax.swing.JFrame {
         accountsTable.getColumnModel().getColumn(5).setCellEditor(new TableActionCellEditor(accountActions));
 
         //Manage Database Connetion
-        database = new DB_Connection();
+//        database = new DB_Connection();
         SessionFactory factory = new Configuration()
                 .configure("/DatabaseSettings/hibernate.cfg.xml")
                 .addAnnotatedClass(PatientsRecord.class)

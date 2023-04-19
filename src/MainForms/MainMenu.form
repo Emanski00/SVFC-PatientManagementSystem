@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<<<<<<< HEAD
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+=======
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+>>>>>>> origin/master
   <NonVisualComponents>
     <Component class="javax.swing.JComboBox" name="jComboBox1">
       <Properties>
@@ -84,7 +88,11 @@
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
                       <Component id="mainCardPanel" max="32767" attributes="0"/>
+=======
+                      <Component id="mainCardPanel" pref="0" max="32767" attributes="0"/>
+>>>>>>> origin/master
                       <Component id="jPanel5" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -93,17 +101,30 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="jPanel2" max="32767" attributes="0"/>
+=======
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+>>>>>>> origin/master
                       <Group type="102" attributes="0">
                           <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="mainCardPanel" max="32767" attributes="0"/>
+<<<<<<< HEAD
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
+=======
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jPanel2" max="32767" attributes="0"/>
+                  </Group>
+>>>>>>> origin/master
               </Group>
           </Group>
         </DimensionLayout>
@@ -122,6 +143,7 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
                           <Component id="jLabel2" max="32767" attributes="0"/>
                           <Component id="manageRequests" alignment="1" max="32767" attributes="0"/>
                           <Component id="jPanel3" alignment="1" max="32767" attributes="0"/>
@@ -136,6 +158,20 @@
                           </Group>
                           <Component id="manageMed" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel19" alignment="1" max="32767" attributes="0"/>
+=======
+                          <Component id="jPanel3" alignment="1" max="32767" attributes="0"/>
+                          <Component id="jLabel1" alignment="1" max="32767" attributes="0"/>
+                          <Component id="suppliesBtn" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLabel2" alignment="1" max="32767" attributes="0"/>
+                          <Component id="manageRequests" alignment="0" max="32767" attributes="0"/>
+                          <Component id="logBtn" alignment="1" max="32767" attributes="0"/>
+                          <Component id="jLabel13" alignment="1" max="32767" attributes="0"/>
+                          <Component id="manageAcc" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                              <Component id="dashBtn" max="32767" attributes="0"/>
+                          </Group>
+>>>>>>> origin/master
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -152,6 +188,7 @@
                       <Component id="jLabel1" min="-2" pref="28" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="suppliesBtn" min="-2" pref="37" max="-2" attributes="0"/>
+<<<<<<< HEAD
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jLabel13" min="-2" pref="28" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -164,6 +201,16 @@
                       <Component id="jLabel2" min="-2" pref="28" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="manageRequests" min="-2" pref="37" max="-2" attributes="0"/>
+=======
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" pref="28" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="manageRequests" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel13" min="-2" pref="28" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="manageAcc" min="-2" pref="37" max="-2" attributes="0"/>
+>>>>>>> origin/master
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="logBtn" min="-2" pref="37" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -177,6 +224,12 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
                 </Property>
+<<<<<<< HEAD
+=======
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+>>>>>>> origin/master
                 <Property name="text" type="java.lang.String" value="Dashboard"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -193,6 +246,12 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
                 </Property>
+<<<<<<< HEAD
+=======
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+>>>>>>> origin/master
                 <Property name="text" type="java.lang.String" value="Patients"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -209,6 +268,12 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="12" style="1"/>
                 </Property>
+<<<<<<< HEAD
+=======
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+>>>>>>> origin/master
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="Manage Patient"/>
               </Properties>
@@ -221,6 +286,12 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="12" style="1"/>
                 </Property>
+<<<<<<< HEAD
+=======
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+>>>>>>> origin/master
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="Logs"/>
               </Properties>
@@ -230,6 +301,12 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
                 </Property>
+<<<<<<< HEAD
+=======
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+>>>>>>> origin/master
                 <Property name="text" type="java.lang.String" value="Users Logs"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -307,6 +384,12 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
                 </Property>
+<<<<<<< HEAD
+=======
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+>>>>>>> origin/master
                 <Property name="text" type="java.lang.String" value="Accounts"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -323,6 +406,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="12" style="1"/>
                 </Property>
+<<<<<<< HEAD
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="Medicines"/>
               </Properties>
@@ -331,11 +415,16 @@
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="12" style="1"/>
+=======
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+>>>>>>> origin/master
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="Manage Accounts"/>
               </Properties>
             </Component>
+<<<<<<< HEAD
             <Component class="javax.swing.JButton" name="manageMed">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -352,6 +441,8 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="manageMedActionPerformed"/>
               </Events>
             </Component>
+=======
+>>>>>>> origin/master
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="mainCardPanel">
@@ -373,6 +464,7 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -395,10 +487,32 @@
                               <Component id="jPanel6" alignment="1" max="32767" attributes="0"/>
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+=======
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="patientTablePane" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="filterByRequest" min="-2" pref="176" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="updateFilter" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace pref="286" max="32767" attributes="0"/>
+>>>>>>> origin/master
                                   <Component id="searchBoxPatient" min="-2" pref="193" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="searchPatientBtn" min="-2" pref="38" max="-2" attributes="0"/>
                               </Group>
+<<<<<<< HEAD
+=======
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="addRecord" min="-2" pref="143" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="addPatientBtn1" min="-2" pref="143" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="refreshPatientTbl" min="-2" pref="143" max="-2" attributes="0"/>
+                              </Group>
+>>>>>>> origin/master
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -407,6 +521,7 @@
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
+<<<<<<< HEAD
                           <EmptySpace min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="searchPatientBtn" alignment="0" max="32767" attributes="0"/>
@@ -428,11 +543,30 @@
                           <Component id="patientTablePane" pref="381" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
+=======
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="searchPatientBtn" alignment="0" max="32767" attributes="0"/>
+                              <Component id="searchBoxPatient" alignment="1" max="32767" attributes="0"/>
+                              <Component id="filterByRequest" alignment="0" max="32767" attributes="0"/>
+                              <Component id="updateFilter" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="addRecord" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                              <Component id="addPatientBtn1" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                              <Component id="refreshPatientTbl" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="patientTablePane" pref="397" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+>>>>>>> origin/master
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
+<<<<<<< HEAD
                 <Component class="javax.swing.JButton" name="refreshPatientTbl">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -461,6 +595,48 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchBoxPatientActionPerformed"/>
                     <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="searchBoxPatientKeyPressed"/>
                   </Events>
+=======
+                <Component class="javax.swing.JComboBox" name="filterByRequest">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="FILTER BY"/>
+                        <StringItem index="1" value="OLD"/>
+                        <StringItem index="2" value="NEW"/>
+                        <StringItem index="3" value="ALL"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="filterByRequestActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JButton" name="updateFilter">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Update"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="addRecord">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="New Record"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addRecordActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="refreshPatientTbl">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Refresh"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="searchBoxPatient">
+                  <Properties>
+                    <Property name="toolTipText" type="java.lang.String" value=""/>
+                  </Properties>
+>>>>>>> origin/master
                 </Component>
                 <Component class="javax.swing.JButton" name="searchPatientBtn">
                   <Properties>
@@ -468,9 +644,12 @@
                       <Image iconType="3" name="/Images/search_1.png"/>
                     </Property>
                   </Properties>
+<<<<<<< HEAD
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchPatientBtnActionPerformed"/>
                   </Events>
+=======
+>>>>>>> origin/master
                 </Component>
                 <Container class="javax.swing.JScrollPane" name="patientTablePane">
                   <AuxValues>
@@ -482,6 +661,7 @@
                     <Component class="javax.swing.JTable" name="patientTable">
                       <Properties>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+<<<<<<< HEAD
                           <Table columnCount="6" rowCount="0">
                             <Column editable="false" title="P_ID" type="java.lang.Object"/>
                             <Column editable="false" title="Student ID / ID No." type="java.lang.Object"/>
@@ -495,10 +675,21 @@
                         <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                           <TableHeader reorderingAllowed="false" resizingAllowed="true"/>
                         </Property>
+=======
+                          <Table columnCount="4" rowCount="2">
+                            <Column editable="false" title="P_ID" type="java.lang.Object"/>
+                            <Column editable="false" title="Name" type="java.lang.Object"/>
+                            <Column editable="false" title="Age" type="java.lang.Object"/>
+                            <Column editable="true" title="Action" type="java.lang.Object"/>
+                          </Table>
+                        </Property>
+                        <Property name="rowHeight" type="int" value="45"/>
+>>>>>>> origin/master
                       </Properties>
                     </Component>
                   </SubComponents>
                 </Container>
+<<<<<<< HEAD
                 <Component class="javax.swing.JButton" name="addPatient">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -618,6 +809,14 @@
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exportAllPatientDataBtnActionPerformed"/>
+=======
+                <Component class="javax.swing.JButton" name="addPatientBtn1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Add Patient"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addPatientBtn1ActionPerformed"/>
+>>>>>>> origin/master
                   </Events>
                 </Component>
               </SubComponents>
@@ -665,6 +864,7 @@
                                   <Component id="jLabel23" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
+<<<<<<< HEAD
                                           <Component id="destribCardPanel1" alignment="0" pref="359" max="32767" attributes="0"/>
                                           <Component id="suppliesPanelCard" pref="359" max="32767" attributes="0"/>
                                       </Group>
@@ -672,6 +872,15 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="destribCardPanel" pref="377" max="32767" attributes="0"/>
                                           <Component id="destribCardPanel2" pref="377" max="32767" attributes="0"/>
+=======
+                                          <Component id="destribCardPanel1" alignment="0" pref="235" max="32767" attributes="0"/>
+                                          <Component id="suppliesPanelCard" pref="235" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="destribCardPanel" pref="228" max="32767" attributes="0"/>
+                                          <Component id="destribCardPanel2" pref="228" max="32767" attributes="0"/>
+>>>>>>> origin/master
                                       </Group>
                                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                                       <Component id="destribCardPanel3" min="-2" pref="264" max="-2" attributes="0"/>
@@ -739,8 +948,13 @@
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
                                               <Component id="jLabel6" pref="335" max="32767" attributes="0"/>
                                               <Component id="currentPatientsLabelCount" max="32767" attributes="0"/>
+=======
+                                              <Component id="jLabel6" pref="219" max="32767" attributes="0"/>
+                                              <Component id="jLabel8" max="32767" attributes="0"/>
+>>>>>>> origin/master
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
@@ -754,7 +968,11 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel6" min="-2" pref="42" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
                                   <Component id="currentPatientsLabelCount" min="-2" max="-2" attributes="0"/>
+=======
+                                  <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+>>>>>>> origin/master
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
                                           <EmptySpace max="32767" attributes="0"/>
@@ -780,6 +998,12 @@
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Dialog" size="18" style="1"/>
                             </Property>
+<<<<<<< HEAD
+=======
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="0" green="0" red="0" type="rgb"/>
+                            </Property>
+>>>>>>> origin/master
                             <Property name="horizontalAlignment" type="int" value="0"/>
                             <Property name="text" type="java.lang.String" value="Current Patients"/>
                           </Properties>
@@ -795,11 +1019,21 @@
                             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                           </AuxValues>
                         </Component>
+<<<<<<< HEAD
                         <Component class="javax.swing.JLabel" name="currentPatientsLabelCount">
+=======
+                        <Component class="javax.swing.JLabel" name="jLabel8">
+>>>>>>> origin/master
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Dialog" size="18" style="1"/>
                             </Property>
+<<<<<<< HEAD
+=======
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="0" green="0" red="0" type="rgb"/>
+                            </Property>
+>>>>>>> origin/master
                             <Property name="horizontalAlignment" type="int" value="0"/>
                             <Property name="text" type="java.lang.String" value="0"/>
                           </Properties>
@@ -832,7 +1066,11 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel10" alignment="0" max="32767" attributes="0"/>
+<<<<<<< HEAD
                                       <Component id="dischargedPatientLabelCount" alignment="0" max="32767" attributes="0"/>
+=======
+                                      <Component id="jLabel11" alignment="0" max="32767" attributes="0"/>
+>>>>>>> origin/master
                                       <Group type="102" alignment="1" attributes="0">
                                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           <Component id="icon_Discharged" min="-2" pref="50" max="-2" attributes="0"/>
@@ -848,9 +1086,15 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel10" min="-2" pref="42" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
                                   <Component id="dischargedPatientLabelCount" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="icon_Discharged" pref="36" max="32767" attributes="0"/>
+=======
+                                  <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="icon_Discharged" pref="46" max="32767" attributes="0"/>
+>>>>>>> origin/master
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -862,16 +1106,32 @@
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Dialog" size="18" style="1"/>
                             </Property>
+<<<<<<< HEAD
+=======
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="0" green="0" red="0" type="rgb"/>
+                            </Property>
+>>>>>>> origin/master
                             <Property name="horizontalAlignment" type="int" value="0"/>
                             <Property name="text" type="java.lang.String" value="Discharged Patients"/>
                             <Property name="toolTipText" type="java.lang.String" value=""/>
                           </Properties>
                         </Component>
+<<<<<<< HEAD
                         <Component class="javax.swing.JLabel" name="dischargedPatientLabelCount">
+=======
+                        <Component class="javax.swing.JLabel" name="jLabel11">
+>>>>>>> origin/master
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Dialog" size="18" style="1"/>
                             </Property>
+<<<<<<< HEAD
+=======
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="0" green="0" red="0" type="rgb"/>
+                            </Property>
+>>>>>>> origin/master
                             <Property name="horizontalAlignment" type="int" value="0"/>
                             <Property name="text" type="java.lang.String" value="0"/>
                           </Properties>
@@ -888,6 +1148,12 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Dialog" size="24" style="1"/>
                         </Property>
+<<<<<<< HEAD
+=======
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="0" green="0" red="0" type="rgb"/>
+                        </Property>
+>>>>>>> origin/master
                         <Property name="text" type="java.lang.String" value="Dashboard"/>
                       </Properties>
                     </Component>
@@ -931,7 +1197,11 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
                                   <Component id="icon_TotalMed" pref="36" max="32767" attributes="0"/>
+=======
+                                  <Component id="icon_TotalMed" pref="46" max="32767" attributes="0"/>
+>>>>>>> origin/master
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -943,6 +1213,12 @@
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Dialog" size="18" style="1"/>
                             </Property>
+<<<<<<< HEAD
+=======
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="0" green="0" red="0" type="rgb"/>
+                            </Property>
+>>>>>>> origin/master
                             <Property name="horizontalAlignment" type="int" value="0"/>
                             <Property name="text" type="java.lang.String" value="Total Medicines"/>
                             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -953,6 +1229,12 @@
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Dialog" size="18" style="1"/>
                             </Property>
+<<<<<<< HEAD
+=======
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="0" green="0" red="0" type="rgb"/>
+                            </Property>
+>>>>>>> origin/master
                             <Property name="horizontalAlignment" type="int" value="0"/>
                             <Property name="text" type="java.lang.String" value="0"/>
                           </Properties>
@@ -1001,7 +1283,11 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
                                   <Component id="icon_outOfMed" pref="36" max="32767" attributes="0"/>
+=======
+                                  <Component id="icon_outOfMed" pref="46" max="32767" attributes="0"/>
+>>>>>>> origin/master
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -1013,6 +1299,12 @@
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Dialog" size="18" style="1"/>
                             </Property>
+<<<<<<< HEAD
+=======
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="0" green="0" red="0" type="rgb"/>
+                            </Property>
+>>>>>>> origin/master
                             <Property name="horizontalAlignment" type="int" value="0"/>
                             <Property name="text" type="java.lang.String" value="Out of Stocks - Medicine"/>
                             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -1023,6 +1315,12 @@
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Dialog" size="18" style="1"/>
                             </Property>
+<<<<<<< HEAD
+=======
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="0" green="0" red="0" type="rgb"/>
+                            </Property>
+>>>>>>> origin/master
                             <Property name="horizontalAlignment" type="int" value="0"/>
                             <Property name="text" type="java.lang.String" value="0"/>
                           </Properties>
@@ -1053,7 +1351,11 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
                                       <Component id="jScrollPane1" max="32767" attributes="0"/>
+<<<<<<< HEAD
                                       <Component id="jLabel18" pref="240" max="32767" attributes="0"/>
+=======
+                                      <Component id="jLabel18" pref="248" max="32767" attributes="0"/>
+>>>>>>> origin/master
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
@@ -1077,6 +1379,12 @@
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Dialog" size="18" style="1"/>
                             </Property>
+<<<<<<< HEAD
+=======
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="0" green="0" red="0" type="rgb"/>
+                            </Property>
+>>>>>>> origin/master
                             <Property name="horizontalAlignment" type="int" value="0"/>
                             <Property name="text" type="java.lang.String" value="Top Cases"/>
                             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -1123,6 +1431,7 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   <Component id="searchBoxAcc" min="-2" pref="193" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -1144,6 +1453,32 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
+=======
+                                  <Component id="filterByRequest1" min="-2" pref="176" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="accountFilterBox" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace pref="286" max="32767" attributes="0"/>
+                                  <Component id="searchBoxAcc1" min="-2" pref="193" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="searchAcc" min="-2" pref="38" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="addAccBtn" min="-2" pref="143" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                                  <Component id="refreshAccTbl" min="-2" pref="94" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="accountsTablePane" pref="757" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+>>>>>>> origin/master
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -1151,6 +1486,7 @@
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
+<<<<<<< HEAD
                               <Component id="searchAccBtn" alignment="0" max="32767" attributes="0"/>
                               <Component id="searchBoxAcc" alignment="1" max="32767" attributes="0"/>
                           </Group>
@@ -1166,33 +1502,85 @@
                           <Component id="accountsTablePane" pref="381" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
+=======
+                              <Component id="searchAcc" alignment="0" max="32767" attributes="0"/>
+                              <Component id="searchBoxAcc1" alignment="1" max="32767" attributes="0"/>
+                              <Component id="filterByRequest1" alignment="0" max="32767" attributes="0"/>
+                              <Component id="accountFilterBox" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="addAccBtn" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                              <Component id="refreshAccTbl" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="424" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="88" max="32767" attributes="0"/>
+                              <Component id="accountsTablePane" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+>>>>>>> origin/master
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
+<<<<<<< HEAD
+=======
+                <Component class="javax.swing.JComboBox" name="filterByRequest1">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="Item 1"/>
+                        <StringItem index="1" value="Item 2"/>
+                        <StringItem index="2" value="Item 3"/>
+                        <StringItem index="3" value="Item 4"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JButton" name="accountFilterBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Update"/>
+                  </Properties>
+                </Component>
+>>>>>>> origin/master
                 <Component class="javax.swing.JButton" name="addAccBtn">
                   <Properties>
                     <Property name="label" type="java.lang.String" value="Add Account"/>
                   </Properties>
+<<<<<<< HEAD
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addAccBtnActionPerformed"/>
                   </Events>
+=======
+>>>>>>> origin/master
                 </Component>
                 <Component class="javax.swing.JButton" name="refreshAccTbl">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Refresh"/>
                   </Properties>
+<<<<<<< HEAD
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="refreshAccTblActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="searchAccBtn">
+=======
+                </Component>
+                <Component class="javax.swing.JButton" name="searchAcc">
+>>>>>>> origin/master
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/Images/search_1.png"/>
                     </Property>
                   </Properties>
+<<<<<<< HEAD
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchAccBtnActionPerformed"/>
                   </Events>
@@ -1219,6 +1607,15 @@
                       <ComponentRef name="null"/>
                     </Property>
                   </Properties>
+=======
+                </Component>
+                <Component class="javax.swing.JTextField" name="searchBoxAcc1">
+                  <Properties>
+                    <Property name="toolTipText" type="java.lang.String" value=""/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="accountsTablePane">
+>>>>>>> origin/master
                   <AuxValues>
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
                   </AuxValues>
@@ -1228,6 +1625,7 @@
                     <Component class="javax.swing.JTable" name="accountsTable">
                       <Properties>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+<<<<<<< HEAD
                           <Table columnCount="4" rowCount="0">
                             <Column editable="false" title="User Id" type="java.lang.Object"/>
                             <Column editable="false" title="Name" type="java.lang.Object"/>
@@ -1239,10 +1637,23 @@
                         <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                           <TableHeader reorderingAllowed="false" resizingAllowed="true"/>
                         </Property>
+=======
+                          <Table columnCount="6" rowCount="2">
+                            <Column editable="false" title="Count" type="java.lang.Object"/>
+                            <Column editable="false" title="User Id" type="java.lang.Object"/>
+                            <Column editable="false" title="Name" type="java.lang.Object"/>
+                            <Column editable="false" title="Password" type="java.lang.Object"/>
+                            <Column editable="false" title="Username" type="java.lang.Object"/>
+                            <Column editable="true" title="Action" type="java.lang.Object"/>
+                          </Table>
+                        </Property>
+                        <Property name="rowHeight" type="int" value="45"/>
+>>>>>>> origin/master
                       </Properties>
                     </Component>
                   </SubComponents>
                 </Container>
+<<<<<<< HEAD
                 <Component class="javax.swing.JButton" name="editBtnAcc">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Edit"/>
@@ -1321,6 +1732,8 @@
                     </Component>
                   </SubComponents>
                 </Container>
+=======
+>>>>>>> origin/master
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="logsPanel">
@@ -1336,6 +1749,7 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
@@ -1357,6 +1771,28 @@
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
+=======
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="filterByRequest2" min="-2" pref="176" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="accountFilterBox1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace pref="286" max="32767" attributes="0"/>
+                                  <Component id="searchBoxAcc2" min="-2" pref="193" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="searchAcc1" min="-2" pref="38" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="addAccBtn1" min="-2" pref="143" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                                  <Component id="refreshAccTbl1" min="-2" pref="94" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+>>>>>>> origin/master
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1367,6 +1803,7 @@
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="searchAcc1" alignment="0" max="32767" attributes="0"/>
                               <Component id="searchBoxAcc2" alignment="1" max="32767" attributes="0"/>
+<<<<<<< HEAD
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -1375,11 +1812,50 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="logsTablePane" pref="422" max="32767" attributes="0"/>
+=======
+                              <Component id="filterByRequest2" alignment="0" max="32767" attributes="0"/>
+                              <Component id="accountFilterBox1" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="addAccBtn1" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                              <Component id="refreshAccTbl1" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="424" max="32767" attributes="0"/>
+>>>>>>> origin/master
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
+<<<<<<< HEAD
+=======
+                <Component class="javax.swing.JComboBox" name="filterByRequest2">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="Item 1"/>
+                        <StringItem index="1" value="Item 2"/>
+                        <StringItem index="2" value="Item 3"/>
+                        <StringItem index="3" value="Item 4"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JButton" name="accountFilterBox1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Update"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="addAccBtn1">
+                  <Properties>
+                    <Property name="label" type="java.lang.String" value="Add Account"/>
+                  </Properties>
+                </Component>
+>>>>>>> origin/master
                 <Component class="javax.swing.JButton" name="refreshAccTbl1">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Refresh"/>
@@ -1397,6 +1873,7 @@
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                 </Component>
+<<<<<<< HEAD
                 <Container class="javax.swing.JScrollPane" name="logsTablePane">
                   <Properties>
                     <Property name="viewportView" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
@@ -1676,6 +2153,8 @@
                     </Component>
                   </SubComponents>
                 </Container>
+=======
+>>>>>>> origin/master
               </SubComponents>
             </Container>
           </SubComponents>
@@ -1722,6 +2201,12 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="24" style="1"/>
                 </Property>
+<<<<<<< HEAD
+=======
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+>>>>>>> origin/master
                 <Property name="horizontalAlignment" type="int" value="2"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/Images/svfclog.png"/>
@@ -1760,6 +2245,12 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Dialog" size="24" style="1"/>
                     </Property>
+<<<<<<< HEAD
+=======
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+>>>>>>> origin/master
                     <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="text" type="java.lang.String" value="Title"/>
                     <Property name="toolTipText" type="java.lang.String" value=""/>

@@ -4,6 +4,7 @@
  */
 package MainForms;
 
+<<<<<<< HEAD
 import DatabaseControl.PatientServiceImpl;
 import Entity.PatientsRecord;
 import Globals.FormatDate;
@@ -29,6 +30,14 @@ import javax.swing.JOptionPane;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+=======
+import java.awt.CardLayout;
+import java.awt.Color;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+>>>>>>> origin/master
 
 /**
  *
@@ -39,6 +48,7 @@ public class AddingPatient extends javax.swing.JDialog {
     /**
      * Creates new form SuppliesAdding
      */
+<<<<<<< HEAD
     SessionFactory factory = null;
     public static int pageCount = 0;
     public static int idHolder = 0;
@@ -197,14 +207,28 @@ public class AddingPatient extends javax.swing.JDialog {
 
         this.setLocationRelativeTo(null);
         this.setResizable(false);
+=======
+    public static int pageCount = 0;
+
+    CardLayout cardLayout;
+
+    public AddingPatient(java.awt.Frame parent, boolean modal) {
+        super(parent, modal);
+        initComponents();
+        this.setLocationRelativeTo(null);
+>>>>>>> origin/master
         this.cardLayout = (CardLayout) mainCard.getLayout();
 
         confirm.setVisible(false);
 
+<<<<<<< HEAD
         firstPageError(false, false, false, false, false, false, "");
         secondPageError(false, false, false, false, false, false, false, false, "");
         thirdPageError(false, false, false, false, "");
 
+=======
+        errorStatus(false, false, false, false, false, false);
+>>>>>>> origin/master
     }
 
     /**
@@ -222,6 +246,7 @@ public class AddingPatient extends javax.swing.JDialog {
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         studIDText = new javax.swing.JTextField();
+<<<<<<< HEAD
         studError = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         nameText = new javax.swing.JTextField();
@@ -236,12 +261,30 @@ public class AddingPatient extends javax.swing.JDialog {
         yearError = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         sectionText = new javax.swing.JTextField();
+=======
+        jLabel4 = new javax.swing.JLabel();
+        nameText = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        ageText = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        bdayChooser = new com.toedter.calendar.JDateChooser();
+        yearLevelText = new javax.swing.JComboBox<>();
+        jLabel17 = new javax.swing.JLabel();
+        sectionText = new javax.swing.JTextField();
+        studError = new javax.swing.JLabel();
+        nameError = new javax.swing.JLabel();
+        birthError = new javax.swing.JLabel();
+        ageError = new javax.swing.JLabel();
+        yearError = new javax.swing.JLabel();
+>>>>>>> origin/master
         sectError = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         seconPage = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         bpText = new javax.swing.JTextField();
+<<<<<<< HEAD
         bpError = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         tempText = new javax.swing.JTextField();
@@ -264,6 +307,20 @@ public class AddingPatient extends javax.swing.JDialog {
         jLabel16 = new javax.swing.JLabel();
         painError = new javax.swing.JLabel();
         painScale = new javax.swing.JComboBox<>();
+=======
+        jLabel9 = new javax.swing.JLabel();
+        hrText = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        rrText = new javax.swing.JTextField();
+        tempText = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        allergiesText = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        contactTracingText = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        chiefCompText = new javax.swing.JTextField();
+>>>>>>> origin/master
         jLabel13 = new javax.swing.JLabel();
         thirdPage = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -276,10 +333,13 @@ public class AddingPatient extends javax.swing.JDialog {
         jLabel27 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         recomText = new javax.swing.JTextArea();
+<<<<<<< HEAD
         objectiveError = new javax.swing.JLabel();
         subjectiveError = new javax.swing.JLabel();
         assestmentError = new javax.swing.JLabel();
         recError = new javax.swing.JLabel();
+=======
+>>>>>>> origin/master
         jLabel23 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         title = new javax.swing.JLabel();
@@ -287,9 +347,14 @@ public class AddingPatient extends javax.swing.JDialog {
         jPanel5 = new javax.swing.JPanel();
         nextPage = new javax.swing.JButton();
         confirm = new javax.swing.JButton();
+<<<<<<< HEAD
         cancel = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+=======
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+>>>>>>> origin/master
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
@@ -299,43 +364,84 @@ public class AddingPatient extends javax.swing.JDialog {
         mainCard.setLayout(new java.awt.CardLayout());
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+<<<<<<< HEAD
         jLabel3.setText("Student Id");
 
         studIDText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
+=======
+        jLabel3.setText("STUDENT ID");
+
+        studIDText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setText("NAME");
+
+        nameText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel5.setText("BIRTHDAY");
+
+        ageText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel6.setText("AGE");
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel7.setText("Year/Level");
+
+        yearLevelText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        yearLevelText.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1st Year", "2nd Year", "3rd Year", "4th Year" }));
+
+        jLabel17.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel17.setText("Section");
+
+        sectionText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+>>>>>>> origin/master
         studError.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         studError.setForeground(new java.awt.Color(255, 0, 0));
         studError.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         studError.setText("error");
 
+<<<<<<< HEAD
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Name");
 
         nameText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
+=======
+>>>>>>> origin/master
         nameError.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         nameError.setForeground(new java.awt.Color(255, 0, 0));
         nameError.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         nameError.setText("error");
 
+<<<<<<< HEAD
         bdayChooser.setDoubleBuffered(false);
 
+=======
+>>>>>>> origin/master
         birthError.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         birthError.setForeground(new java.awt.Color(255, 0, 0));
         birthError.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         birthError.setText("error");
 
+<<<<<<< HEAD
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText("Birth / Age");
 
         ageText.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         ageText.setEnabled(false);
 
+=======
+>>>>>>> origin/master
         ageError.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         ageError.setForeground(new java.awt.Color(255, 0, 0));
         ageError.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         ageError.setText("error");
 
+<<<<<<< HEAD
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel7.setText("Year/Level");
 
@@ -343,16 +449,21 @@ public class AddingPatient extends javax.swing.JDialog {
         yearLevelText.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Year", "Kinder", "Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5", "Grade 6", "------------------------", "1st Year  Junior High", "2nd Year Junior High", "3rd Year Junior High", "4th Year Junior High", "------------------------", "1st Year  Senior High", "2nd Year Senior High", "------------------------", "1st Year College", "2nd Year College", "3rd Year College", "4th Year College", " " }));
         yearLevelText.setToolTipText("");
 
+=======
+>>>>>>> origin/master
         yearError.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         yearError.setForeground(new java.awt.Color(255, 0, 0));
         yearError.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         yearError.setText("error");
 
+<<<<<<< HEAD
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel17.setText("Section");
 
         sectionText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
+=======
+>>>>>>> origin/master
         sectError.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         sectError.setForeground(new java.awt.Color(255, 0, 0));
         sectError.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -364,6 +475,7 @@ public class AddingPatient extends javax.swing.JDialog {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
+<<<<<<< HEAD
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(yearLevelText, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -388,6 +500,29 @@ public class AddingPatient extends javax.swing.JDialog {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(ageText, javax.swing.GroupLayout.DEFAULT_SIZE, 101, Short.MAX_VALUE)
                             .addComponent(ageError, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+=======
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(birthError, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(studIDText, javax.swing.GroupLayout.DEFAULT_SIZE, 309, Short.MAX_VALUE)
+                    .addComponent(nameText, javax.swing.GroupLayout.DEFAULT_SIZE, 309, Short.MAX_VALUE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(bdayChooser, javax.swing.GroupLayout.DEFAULT_SIZE, 309, Short.MAX_VALUE)
+                    .addComponent(studError, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(nameError, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(51, 51, 51)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(yearLevelText, 0, 339, Short.MAX_VALUE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(sectionText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 339, Short.MAX_VALUE)
+                    .addComponent(ageText)
+                    .addComponent(ageError, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(yearError, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(sectError, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> origin/master
                 .addGap(93, 93, 93))
         );
         jPanel2Layout.setVerticalGroup(
@@ -397,6 +532,7 @@ public class AddingPatient extends javax.swing.JDialog {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel3)
+<<<<<<< HEAD
                         .addGap(0, 0, 0)
                         .addComponent(studIDText, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -424,12 +560,51 @@ public class AddingPatient extends javax.swing.JDialog {
                             .addComponent(ageError, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(birthError, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+=======
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addComponent(studIDText, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(14, 14, 14)
+                                .addComponent(studError, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(nameText, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(nameError, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(65, 65, 65)
+                                .addComponent(jLabel7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(yearLevelText, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(yearError, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ageText, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ageError, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(bdayChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(birthError, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+>>>>>>> origin/master
                         .addComponent(jLabel17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(sectionText, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(sectError, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
+<<<<<<< HEAD
                 .addContainerGap(82, Short.MAX_VALUE))
+=======
+                .addContainerGap(69, Short.MAX_VALUE))
+>>>>>>> origin/master
         );
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -459,6 +634,7 @@ public class AddingPatient extends javax.swing.JDialog {
 
         mainCard.add(firstPanel, "firstPage");
 
+<<<<<<< HEAD
         seconPage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -506,20 +682,51 @@ public class AddingPatient extends javax.swing.JDialog {
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+=======
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel8.setText("BP - BLOOD PREASURE");
+
+        bpText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+>>>>>>> origin/master
         jLabel9.setText("HR - HEARTH RATE");
 
         hrText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
+<<<<<<< HEAD
         hrError.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         hrError.setForeground(new java.awt.Color(255, 0, 0));
         hrError.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         hrError.setText("error");
+=======
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel10.setText("RR - RESPIRATORY RATE");
+
+        rrText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        tempText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel11.setText("TEMP");
+
+        allergiesText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel12.setText("ALLERGIES");
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel14.setText("CONTACT TRACING");
+
+        contactTracingText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+>>>>>>> origin/master
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel15.setText("CHIEF COMPLAINT");
 
         chiefCompText.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
+<<<<<<< HEAD
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel12.setText("ALLERGIES");
 
@@ -555,10 +762,13 @@ public class AddingPatient extends javax.swing.JDialog {
 
         painScale.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECT SCALE(1-10)", "LEVEL 1", "LEVEL 2", "LEVEL 3", "LEVEL 4", "LEVEL 5", "LEVEL 6", "LEVEL 7", "LEVEL 8", "LEVEL 9", "LEVEL 10" }));
 
+=======
+>>>>>>> origin/master
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(194, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -602,10 +812,37 @@ public class AddingPatient extends javax.swing.JDialog {
                         .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 309, Short.MAX_VALUE)
                         .addComponent(allergiesText, javax.swing.GroupLayout.Alignment.LEADING)))
                 .addGap(86, 86, 86))
+=======
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(bpText, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9)
+                    .addComponent(hrText, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rrText, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(allergiesText, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tempText, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel12)
+                    .addComponent(contactTracingText, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel14))
+                .addGap(93, 93, 93))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(187, 187, 187)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(chiefCompText, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel15))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> origin/master
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGap(21, 21, 21)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -669,6 +906,66 @@ public class AddingPatient extends javax.swing.JDialog {
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText("VITAL SIGNS");
         seconPage.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 1098, -1));
+=======
+                .addContainerGap()
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(bpText, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(hrText, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel10))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(tempText, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(allergiesText, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(rrText, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel14)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(contactTracingText, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(chiefCompText, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(55, Short.MAX_VALUE))
+        );
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel13.setText("VITAL SIGNS");
+
+        javax.swing.GroupLayout seconPageLayout = new javax.swing.GroupLayout(seconPage);
+        seconPage.setLayout(seconPageLayout);
+        seconPageLayout.setHorizontalGroup(
+            seconPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(seconPageLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(seconPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        seconPageLayout.setVerticalGroup(
+            seconPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, seconPageLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+>>>>>>> origin/master
 
         mainCard.add(seconPage, "secondPage");
 
@@ -696,6 +993,7 @@ public class AddingPatient extends javax.swing.JDialog {
         recomText.setRows(5);
         jScrollPane1.setViewportView(recomText);
 
+<<<<<<< HEAD
         objectiveError.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         objectiveError.setForeground(new java.awt.Color(255, 0, 0));
         objectiveError.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -716,11 +1014,14 @@ public class AddingPatient extends javax.swing.JDialog {
         recError.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         recError.setText("error");
 
+=======
+>>>>>>> origin/master
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGap(30, 30, 30)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -745,11 +1046,38 @@ public class AddingPatient extends javax.swing.JDialog {
                         .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 403, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1))
                 .addGap(65, 65, 65))
+=======
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 531, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
+                        .addGap(41, 41, 41)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(objectiveText, javax.swing.GroupLayout.PREFERRED_SIZE, 533, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel27, javax.swing.GroupLayout.DEFAULT_SIZE, 531, Short.MAX_VALUE)
+                                    .addComponent(assestmentText)))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(subjectiveText, javax.swing.GroupLayout.PREFERRED_SIZE, 533, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addGap(38, 38, 38)
+                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(652, Short.MAX_VALUE)))
+>>>>>>> origin/master
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
+<<<<<<< HEAD
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -777,6 +1105,27 @@ public class AddingPatient extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(recError)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+=======
+                .addComponent(objectiveText, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(subjectiveText, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(assestmentText, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(126, 126, 126))
+            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addGap(28, 28, 28)
+                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(295, Short.MAX_VALUE)))
+>>>>>>> origin/master
         );
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -790,7 +1139,11 @@ public class AddingPatient extends javax.swing.JDialog {
             .addGroup(thirdPageLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(thirdPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
                     .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+=======
+                    .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, 802, Short.MAX_VALUE)
+>>>>>>> origin/master
                     .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -856,6 +1209,7 @@ public class AddingPatient extends javax.swing.JDialog {
         });
         jPanel5.add(confirm, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 193, 53));
 
+<<<<<<< HEAD
         cancel.setText("Cancel");
         cancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -863,6 +1217,8 @@ public class AddingPatient extends javax.swing.JDialog {
             }
         });
 
+=======
+>>>>>>> origin/master
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -879,8 +1235,11 @@ public class AddingPatient extends javax.swing.JDialog {
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+<<<<<<< HEAD
                 .addComponent(cancel, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+=======
+>>>>>>> origin/master
                 .addComponent(previous, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -892,6 +1251,7 @@ public class AddingPatient extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -900,6 +1260,14 @@ public class AddingPatient extends javax.swing.JDialog {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(previous, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(cancel, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(previous, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> origin/master
                 .addContainerGap())
         );
 
@@ -911,6 +1279,7 @@ public class AddingPatient extends javax.swing.JDialog {
         if (pageCount == 0) {
 
             if (studIDText.getText().isEmpty()) {
+<<<<<<< HEAD
                 firstPageError(true, false, false, false, false, false, "Please Fill Student Id.");
 
             } else if (nameText.getText().isEmpty()) {
@@ -930,6 +1299,23 @@ public class AddingPatient extends javax.swing.JDialog {
             } else {
                 firstPageError(false, false, false, false, false, false, "");
                 title.setText("Vitals Signs / Other Information");
+=======
+                errorStatus(true, false, false, false, false, false);
+
+            } else if (nameText.getText().isEmpty()) {
+                errorStatus(false, true, false, false, false, false);
+            } else if (ageText.getText().isEmpty()) {
+                errorStatus(false, false, true, false, false, false);
+            } else if (bdayChooser.getCalendar() == null) {
+                errorStatus(false, false, false, true, false, false);
+            } else if (yearLevelText.getSelectedIndex() == 0) {
+                errorStatus(false, false, false, false, true, false);
+            } else if (sectionText.getText().isEmpty()) {
+                errorStatus(false, false, false, false, false, true);
+            } else {
+                errorStatus(false, false, false, false, false, false);
+                title.setText("Vital Signs");
+>>>>>>> origin/master
                 cardLayout.show(mainCard, "secondPage");
                 pageCount++;
                 previous.setEnabled(true);
@@ -940,6 +1326,7 @@ public class AddingPatient extends javax.swing.JDialog {
         } else if (pageCount == 1) {
 
             if (bpText.getText().isEmpty()) {
+<<<<<<< HEAD
                 secondPageError(true, false, false, false, false, false, false, false, "Please fill blodd preasure.");
             } else if (tempText.getText().isEmpty()) {
                 secondPageError(false, true, false, false, false, false, false, false, "Please fill Temperature information.");
@@ -970,6 +1357,12 @@ public class AddingPatient extends javax.swing.JDialog {
 
             } else {
                 secondPageError(false, false, false, false, false, false, false, false, "");
+=======
+                JOptionPane.showMessageDialog(null, "Please Fill BP Text", "Empty!!", JOptionPane.INFORMATION_MESSAGE);
+            } else if (hrText.getText().isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Please Fill Heart Rate", "Empty!!", JOptionPane.INFORMATION_MESSAGE);
+            } else {
+>>>>>>> origin/master
                 title.setText("Diagnosis");
                 cardLayout.show(mainCard, "thirdPage");
                 pageCount++;
@@ -1000,7 +1393,11 @@ public class AddingPatient extends javax.swing.JDialog {
             confirm.setVisible(false);
             confirm.setEnabled(false);
         } else if (pageCount == 2) {
+<<<<<<< HEAD
             title.setText("Vital Signs / Other Information");
+=======
+            title.setText("Vital Signs");
+>>>>>>> origin/master
             cardLayout.show(mainCard, "secondPage");
             pageCount = 1;
             nextPage.setEnabled(true);
@@ -1019,20 +1416,33 @@ public class AddingPatient extends javax.swing.JDialog {
         try {
 
             LocalDateTime currentDateTime = LocalDateTime.now();
+<<<<<<< HEAD
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE, MMMM dd, yyyy");
             String birthDay = "";
             String age = "";
+=======
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-HH:mm:ss-yyyy-MM-dd");
+            String birthDay = "";
+            int age = 0;
+>>>>>>> origin/master
             String studentId = studIDText.getText();
             String name = nameText.getText();
             if (bdayChooser.getCalendar() != null) {
                 birthDay = bdayChooser.getCalendar().getTime().toString();
             }
             if (!ageText.getText().isEmpty()) {
+<<<<<<< HEAD
                 age = ageText.getText();
             }
 
             String yearLvl = yearLevelText.getSelectedItem().toString();
             String section = sectionText.getText();
+=======
+                age = Integer.parseInt(ageText.getText());
+            }
+
+            String yearLvl = yearLevelText.getSelectedItem().toString();
+>>>>>>> origin/master
             String timeIn = currentDateTime.format(formatter);
 
             // Vital Signs
@@ -1041,7 +1451,10 @@ public class AddingPatient extends javax.swing.JDialog {
             String rr = rrText.getText();
             String temp = tempText.getText();
             String allergies = allergiesText.getText();
+<<<<<<< HEAD
             String painSc = painScale.getSelectedItem().toString();
+=======
+>>>>>>> origin/master
             String contactTracing = contactTracingText.getText();
             String chiefCom = chiefCompText.getText();
 
@@ -1051,6 +1464,7 @@ public class AddingPatient extends javax.swing.JDialog {
             String asses = assestmentText.getText();
             String recom = recomText.getText();
 
+<<<<<<< HEAD
             if (objective.isEmpty()) {
                 thirdPageError(true, false, false, false, "Please fill objective.");
             } else if (subjective.isEmpty()) {
@@ -1139,6 +1553,33 @@ public class AddingPatient extends javax.swing.JDialog {
 
                 }
 
+=======
+            String message = "--- Student Information ---\n"
+                    + "Student ID: " + studentId + "\n"
+                    + "Name: " + name + "\n"
+                    + "Birthday: " + birthDay + "\n"
+                    + "Age: " + age + "\n"
+                    + "Year Level: " + yearLvl + "\n"
+                    + "Time In: " + timeIn + "\n"
+                    + "--- Vital Signs ---\n"
+                    + "Blood Pressure: " + bp + "\n"
+                    + "Heart Rate: " + hr + "\n"
+                    + "Respiratory Rate: " + rr + "\n"
+                    + "Temperature: " + temp + "\n"
+                    + "Allergies: " + allergies + "\n"
+                    + "Contact Tracing: " + contactTracing + "\n"
+                    + "Chief Complaint: " + chiefCom + "\n"
+                    + "--- Diagnosis ---\n"
+                    + "Objective: " + objective + "\n"
+                    + "Subjective: " + subjective + "\n"
+                    + "Assessment: " + asses + "\n"
+                    + "Recommendation: " + recom + "\n";
+
+            if (objective.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Please Fill up Objective!!", "Empty", JOptionPane.INFORMATION_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(null, message, "Student Information", JOptionPane.INFORMATION_MESSAGE);
+>>>>>>> origin/master
             }
 
         } catch (Exception e) {
@@ -1150,6 +1591,7 @@ public class AddingPatient extends javax.swing.JDialog {
         pageCount = 0;
     }//GEN-LAST:event_formWindowOpened
 
+<<<<<<< HEAD
     private void cancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelActionPerformed
         this.dispose();
     }//GEN-LAST:event_cancelActionPerformed
@@ -1162,6 +1604,8 @@ public class AddingPatient extends javax.swing.JDialog {
         JOptionPane.showMessageDialog(null, "YES");
     }//GEN-LAST:event_rrErrorMouseClicked
 
+=======
+>>>>>>> origin/master
     /**
      * @param args the command line arguments
      */
@@ -1198,7 +1642,11 @@ public class AddingPatient extends javax.swing.JDialog {
         });
     }
 
+<<<<<<< HEAD
     public void firstPageError(boolean studStatus, boolean nameStatus, boolean ageStatu, boolean birthStatus, boolean yearStatus, boolean sectStatus, String errorMessage) {
+=======
+    public void errorStatus(boolean studStatus, boolean nameStatus, boolean ageStatu, boolean birthStatus, boolean yearStatus, boolean sectStatus) {
+>>>>>>> origin/master
         studError.setVisible(studStatus);
         nameError.setVisible(nameStatus);
         ageError.setVisible(ageStatu);
@@ -1207,37 +1655,61 @@ public class AddingPatient extends javax.swing.JDialog {
         sectError.setVisible(sectStatus);
 
         if (studStatus) {
+<<<<<<< HEAD
             studError.setText(errorMessage);
+=======
+            studError.setText("Please fill student id");
+>>>>>>> origin/master
         } else {
             studError.setText("");
             studError.setVisible(false);
         }
         if (nameStatus) {
+<<<<<<< HEAD
             nameError.setText(errorMessage);
+=======
+            nameError.setText("Please fill student name.");
+>>>>>>> origin/master
         } else {
             nameError.setText("");
             nameError.setVisible(false);
         }
         if (ageStatu) {
+<<<<<<< HEAD
             ageError.setText(errorMessage);
+=======
+            ageError.setText("Please fill age.");
+>>>>>>> origin/master
         } else {
             ageError.setText("");
             ageError.setVisible(false);
         }
         if (birthStatus) {
+<<<<<<< HEAD
             birthError.setText(errorMessage);
+=======
+            birthError.setText("Please fill birthday.");
+>>>>>>> origin/master
         } else {
             birthError.setText("");
             birthError.setVisible(false);
         }
         if (yearStatus) {
+<<<<<<< HEAD
             yearError.setText(errorMessage);
+=======
+            yearError.setText("Please fill year level.");
+>>>>>>> origin/master
         } else {
             yearError.setText("");
             yearError.setVisible(false);
         }
         if (sectStatus) {
+<<<<<<< HEAD
             sectError.setText(errorMessage);
+=======
+            sectError.setText("Please fill section.");
+>>>>>>> origin/master
         } else {
             sectError.setText("");
             sectError.setVisible(false);
@@ -1245,6 +1717,7 @@ public class AddingPatient extends javax.swing.JDialog {
 
     }
 
+<<<<<<< HEAD
     public void secondPageError(boolean bpStatus, boolean tempStatus, boolean ctStatus, boolean hearthStatus, boolean allStatus, boolean painStatus, boolean rrStatus, boolean ccStatus, String errorMessage) {
         bpError.setVisible(bpStatus);
         tempError.setVisible(tempStatus);
@@ -1357,6 +1830,21 @@ public class AddingPatient extends javax.swing.JDialog {
     private javax.swing.JLabel ctError;
     private javax.swing.JPanel firstPanel;
     private javax.swing.JLabel hrError;
+=======
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel ageError;
+    private javax.swing.JTextField ageText;
+    private javax.swing.JTextField allergiesText;
+    private javax.swing.JTextField assestmentText;
+    private com.toedter.calendar.JDateChooser bdayChooser;
+    private javax.swing.JLabel birthError;
+    private javax.swing.JTextField bpText;
+    private javax.swing.JTextField chiefCompText;
+    private javax.swing.JButton confirm;
+    private javax.swing.JTextField contactTracingText;
+    private javax.swing.JPanel firstPanel;
+>>>>>>> origin/master
     private javax.swing.JTextField hrText;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -1365,7 +1853,10 @@ public class AddingPatient extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+<<<<<<< HEAD
     private javax.swing.JLabel jLabel16;
+=======
+>>>>>>> origin/master
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel23;
@@ -1375,6 +1866,10 @@ public class AddingPatient extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+<<<<<<< HEAD
+=======
+    private javax.swing.JLabel jLabel5;
+>>>>>>> origin/master
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -1389,6 +1884,7 @@ public class AddingPatient extends javax.swing.JDialog {
     private javax.swing.JLabel nameError;
     private javax.swing.JTextField nameText;
     private javax.swing.JButton nextPage;
+<<<<<<< HEAD
     private javax.swing.JLabel objectiveError;
     private javax.swing.JTextField objectiveText;
     private javax.swing.JLabel painError;
@@ -1397,15 +1893,24 @@ public class AddingPatient extends javax.swing.JDialog {
     private javax.swing.JLabel recError;
     private javax.swing.JTextArea recomText;
     private javax.swing.JLabel rrError;
+=======
+    private javax.swing.JTextField objectiveText;
+    private javax.swing.JButton previous;
+    private javax.swing.JTextArea recomText;
+>>>>>>> origin/master
     private javax.swing.JTextField rrText;
     private javax.swing.JPanel seconPage;
     private javax.swing.JLabel sectError;
     private javax.swing.JTextField sectionText;
     private javax.swing.JLabel studError;
     private javax.swing.JTextField studIDText;
+<<<<<<< HEAD
     private javax.swing.JLabel subjectiveError;
     private javax.swing.JTextField subjectiveText;
     private javax.swing.JLabel tempError;
+=======
+    private javax.swing.JTextField subjectiveText;
+>>>>>>> origin/master
     private javax.swing.JTextField tempText;
     private javax.swing.JPanel thirdPage;
     private javax.swing.JLabel title;

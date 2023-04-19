@@ -1,24 +1,43 @@
+<<<<<<< HEAD
 package MainForms;
 
 import SecondaryForms.ViewMedicine;
 import DatabaseControl.AccountServiceImpl;
+=======
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
+package MainForms;
+
+import ButtonColumn.TableActionCellEditor;
+import ButtonColumn.TableActionCellRender;
+import ButtonColumn.TableActionEvent;
+>>>>>>> origin/master
 import DatabaseSettings.DB_Connection;
 import Entity.Medicines;
 import Entity.PatientsRecord;
 import Entity.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Color;
+<<<<<<< HEAD
 import java.util.List;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+=======
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+>>>>>>> origin/master
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
 import org.hibernate.cfg.Configuration;
+<<<<<<< HEAD
 import org.hibernate.query.Query;
 
 import DatabaseControl.MedicineServiceImpl;
@@ -34,6 +53,8 @@ import javax.persistence.criteria.Root;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.TableColumn;
+=======
+>>>>>>> origin/master
 
 /**
  *
@@ -43,6 +64,7 @@ public class MainMenu extends javax.swing.JFrame {
 
     CardLayout cardLayout;
     DB_Connection database = null;
+<<<<<<< HEAD
     SessionFactory factory = null;
 
     public static int idHolder = 0;
@@ -70,6 +92,8 @@ public class MainMenu extends javax.swing.JFrame {
     private int currentAccPage = 1; // current page number
     private int totalAccRecords = 0; // total number of records in the database
     private int totalAccPage = 0; // total number of pages
+=======
+>>>>>>> origin/master
 
     public MainMenu() {
 
@@ -96,6 +120,7 @@ public class MainMenu extends javax.swing.JFrame {
         icon_outOfMed.setIcon(emptyIcon);
         cardLayout.show(mainCardPanel, "dashboardCard");
 
+<<<<<<< HEAD
         refreshPatientTable(currentPatientPage);
 
         refreshAccountTable(currentAccPage);
@@ -103,6 +128,50 @@ public class MainMenu extends javax.swing.JFrame {
         refreshMedicineTable(currentMedPage);
 
         factory = new Configuration()
+=======
+        TableActionEvent patientActions = new TableActionEvent() {
+            @Override
+            public void onEdit(int row) {
+                System.out.println(row);
+            }
+
+            @Override
+            public void onDelete(int row) {
+                System.out.println(row);
+            }
+
+            @Override
+            public void onView(int row) {
+                System.out.println(row);
+            }
+        };
+        
+         TableActionEvent accountActions = new TableActionEvent() {
+            @Override
+            public void onEdit(int row) {
+                System.out.println(row);
+            }
+
+            @Override
+            public void onDelete(int row) {
+                System.out.println(row);
+            }
+
+            @Override
+            public void onView(int row) {
+                System.out.println(row);
+            }
+        };
+        patientTable.getColumnModel().getColumn(3).setCellRenderer(new TableActionCellRender());
+        patientTable.getColumnModel().getColumn(3).setCellEditor(new TableActionCellEditor(patientActions));
+
+        accountsTable.getColumnModel().getColumn(5).setCellRenderer(new TableActionCellRender());
+        accountsTable.getColumnModel().getColumn(5).setCellEditor(new TableActionCellEditor(accountActions));
+
+        //Manage Database Connetion
+//        database = new DB_Connection();
+        SessionFactory factory = new Configuration()
+>>>>>>> origin/master
                 .configure("/DatabaseSettings/hibernate.cfg.xml")
                 .addAnnotatedClass(PatientsRecord.class)
                 .addAnnotatedClass(Medicines.class)
@@ -119,6 +188,7 @@ public class MainMenu extends javax.swing.JFrame {
             session.close();
             factory.close();
         }
+<<<<<<< HEAD
         loadPatientsCount();
 
         hideColumnCount(patientTable);
@@ -145,6 +215,8 @@ public class MainMenu extends javax.swing.JFrame {
 
         currentPatientsLabelCount.setText(String.valueOf(currentPatients));
         dischargedPatientLabelCount.setText(String.valueOf(dischargedPatients));
+=======
+>>>>>>> origin/master
     }
 
     /**
@@ -175,15 +247,24 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         manageAcc = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
+<<<<<<< HEAD
         jLabel19 = new javax.swing.JLabel();
         manageMed = new javax.swing.JButton();
         mainCardPanel = new javax.swing.JPanel();
         patientsPanel = new javax.swing.JPanel();
+=======
+        mainCardPanel = new javax.swing.JPanel();
+        patientsPanel = new javax.swing.JPanel();
+        filterByRequest = new javax.swing.JComboBox<>();
+        updateFilter = new javax.swing.JButton();
+        addRecord = new javax.swing.JButton();
+>>>>>>> origin/master
         refreshPatientTbl = new javax.swing.JButton();
         searchBoxPatient = new javax.swing.JTextField();
         searchPatientBtn = new javax.swing.JButton();
         patientTablePane = new javax.swing.JScrollPane();
         patientTable = new javax.swing.JTable();
+<<<<<<< HEAD
         addPatient = new javax.swing.JButton();
         editBtnPatient = new javax.swing.JButton();
         delBtnPatient = new javax.swing.JButton();
@@ -196,17 +277,28 @@ public class MainMenu extends javax.swing.JFrame {
         nextPatientTable = new javax.swing.JButton();
         lastPatientTable = new javax.swing.JButton();
         exportAllPatientDataBtn = new javax.swing.JButton();
+=======
+        addPatientBtn1 = new javax.swing.JButton();
+>>>>>>> origin/master
         dashboardPanel = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         suppliesPanelCard = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         imageIcon = new javax.swing.JLabel();
+<<<<<<< HEAD
         currentPatientsLabelCount = new javax.swing.JLabel();
+=======
+        jLabel8 = new javax.swing.JLabel();
+>>>>>>> origin/master
         icon_CurrentPati = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         destribCardPanel = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
+<<<<<<< HEAD
         dischargedPatientLabelCount = new javax.swing.JLabel();
+=======
+        jLabel11 = new javax.swing.JLabel();
+>>>>>>> origin/master
         icon_Discharged = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         destribCardPanel1 = new javax.swing.JPanel();
@@ -222,6 +314,7 @@ public class MainMenu extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
         accountsPanel = new javax.swing.JPanel();
+<<<<<<< HEAD
         addAccBtn = new javax.swing.JButton();
         refreshAccTbl = new javax.swing.JButton();
         searchAccBtn = new javax.swing.JButton();
@@ -261,6 +354,23 @@ public class MainMenu extends javax.swing.JFrame {
         pageMedInfo = new javax.swing.JLabel();
         nextMedTable = new javax.swing.JButton();
         lastMedTable = new javax.swing.JButton();
+=======
+        filterByRequest1 = new javax.swing.JComboBox<>();
+        accountFilterBox = new javax.swing.JButton();
+        addAccBtn = new javax.swing.JButton();
+        refreshAccTbl = new javax.swing.JButton();
+        searchAcc = new javax.swing.JButton();
+        searchBoxAcc1 = new javax.swing.JTextField();
+        accountsTablePane = new javax.swing.JScrollPane();
+        accountsTable = new javax.swing.JTable();
+        logsPanel = new javax.swing.JPanel();
+        filterByRequest2 = new javax.swing.JComboBox<>();
+        accountFilterBox1 = new javax.swing.JButton();
+        addAccBtn1 = new javax.swing.JButton();
+        refreshAccTbl1 = new javax.swing.JButton();
+        searchAcc1 = new javax.swing.JButton();
+        searchBoxAcc2 = new javax.swing.JTextField();
+>>>>>>> origin/master
         jPanel5 = new javax.swing.JPanel();
         panelsTitles2 = new javax.swing.JLabel();
         titlePanel = new javax.swing.JPanel();
@@ -284,6 +394,10 @@ public class MainMenu extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
 
         dashBtn.setBackground(new java.awt.Color(204, 204, 204));
+<<<<<<< HEAD
+=======
+        dashBtn.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         dashBtn.setText("Dashboard");
         dashBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         dashBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -293,6 +407,10 @@ public class MainMenu extends javax.swing.JFrame {
         });
 
         suppliesBtn.setBackground(new java.awt.Color(204, 204, 204));
+<<<<<<< HEAD
+=======
+        suppliesBtn.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         suppliesBtn.setText("Patients");
         suppliesBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         suppliesBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -302,14 +420,26 @@ public class MainMenu extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+<<<<<<< HEAD
+=======
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Manage Patient");
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+<<<<<<< HEAD
+=======
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Logs");
 
         manageRequests.setBackground(new java.awt.Color(204, 204, 204));
+<<<<<<< HEAD
+=======
+        manageRequests.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         manageRequests.setText("Users Logs");
         manageRequests.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         manageRequests.addActionListener(new java.awt.event.ActionListener() {
@@ -360,6 +490,10 @@ public class MainMenu extends javax.swing.JFrame {
         );
 
         manageAcc.setBackground(new java.awt.Color(204, 204, 204));
+<<<<<<< HEAD
+=======
+        manageAcc.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         manageAcc.setText("Accounts");
         manageAcc.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         manageAcc.addActionListener(new java.awt.event.ActionListener() {
@@ -369,6 +503,7 @@ public class MainMenu extends javax.swing.JFrame {
         });
 
         jLabel13.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+<<<<<<< HEAD
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText("Medicines");
 
@@ -384,6 +519,11 @@ public class MainMenu extends javax.swing.JFrame {
                 manageMedActionPerformed(evt);
             }
         });
+=======
+        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel13.setText("Manage Accounts");
+>>>>>>> origin/master
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -392,19 +532,31 @@ public class MainMenu extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(manageRequests, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(suppliesBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+=======
+                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(suppliesBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(manageRequests, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+>>>>>>> origin/master
                     .addComponent(logBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(manageAcc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
+<<<<<<< HEAD
                         .addComponent(dashBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(manageMed, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                        .addComponent(dashBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+>>>>>>> origin/master
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -418,6 +570,7 @@ public class MainMenu extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(suppliesBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -430,6 +583,16 @@ public class MainMenu extends javax.swing.JFrame {
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(manageRequests, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(manageRequests, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(manageAcc, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+>>>>>>> origin/master
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(logBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -440,6 +603,7 @@ public class MainMenu extends javax.swing.JFrame {
         mainCardPanel.setBackground(new java.awt.Color(255, 255, 255));
         mainCardPanel.setLayout(new java.awt.CardLayout());
 
+<<<<<<< HEAD
         refreshPatientTbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/refresh.png"))); // NOI18N
         refreshPatientTbl.setText("Refresh");
         refreshPatientTbl.addActionListener(new java.awt.event.ActionListener() {
@@ -486,6 +650,41 @@ public class MainMenu extends javax.swing.JFrame {
         ) {
             boolean[] canEdit = new boolean [] {
                 false, false, false, false, false, false
+=======
+        filterByRequest.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "FILTER BY", "OLD", "NEW", "ALL" }));
+        filterByRequest.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                filterByRequestActionPerformed(evt);
+            }
+        });
+
+        updateFilter.setText("Update");
+
+        addRecord.setText("New Record");
+        addRecord.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addRecordActionPerformed(evt);
+            }
+        });
+
+        refreshPatientTbl.setText("Refresh");
+
+        searchBoxPatient.setToolTipText("");
+
+        searchPatientBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search_1.png"))); // NOI18N
+
+        patientTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "P_ID", "Name", "Age", "Action"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, true
+>>>>>>> origin/master
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -493,6 +692,7 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
         patientTable.setRowHeight(45);
+<<<<<<< HEAD
         patientTable.getTableHeader().setReorderingAllowed(false);
         patientTablePane.setViewportView(patientTable);
 
@@ -583,6 +783,14 @@ public class MainMenu extends javax.swing.JFrame {
         exportAllPatientDataBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 exportAllPatientDataBtnActionPerformed(evt);
+=======
+        patientTablePane.setViewportView(patientTable);
+
+        addPatientBtn1.setText("Add Patient");
+        addPatientBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addPatientBtn1ActionPerformed(evt);
+>>>>>>> origin/master
             }
         });
 
@@ -594,6 +802,7 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(patientsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(patientTablePane)
+<<<<<<< HEAD
                     .addGroup(patientsPanelLayout.createSequentialGroup()
                         .addComponent(editBtnPatient, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -614,6 +823,23 @@ public class MainMenu extends javax.swing.JFrame {
                         .addComponent(searchBoxPatient, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(searchPatientBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
+=======
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, patientsPanelLayout.createSequentialGroup()
+                        .addComponent(filterByRequest, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(updateFilter)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 286, Short.MAX_VALUE)
+                        .addComponent(searchBoxPatient, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(searchPatientBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, patientsPanelLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(addRecord, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(addPatientBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(refreshPatientTbl, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
+>>>>>>> origin/master
                 .addContainerGap())
         );
         patientsPanelLayout.setVerticalGroup(
@@ -622,6 +848,7 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(patientsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(searchPatientBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+<<<<<<< HEAD
                     .addComponent(searchBoxPatient))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(patientsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -637,6 +864,19 @@ public class MainMenu extends javax.swing.JFrame {
                 .addComponent(patientTablePane, javax.swing.GroupLayout.DEFAULT_SIZE, 381, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+=======
+                    .addComponent(searchBoxPatient, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(filterByRequest)
+                    .addComponent(updateFilter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(15, 15, 15)
+                .addGroup(patientsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(addRecord, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(addPatientBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(refreshPatientTbl, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(patientTablePane, javax.swing.GroupLayout.DEFAULT_SIZE, 397, Short.MAX_VALUE)
+                .addContainerGap())
+>>>>>>> origin/master
         );
 
         mainCardPanel.add(patientsPanel, "patientCard");
@@ -650,15 +890,26 @@ public class MainMenu extends javax.swing.JFrame {
         suppliesPanelCard.setPreferredSize(new java.awt.Dimension(194, 180));
 
         jLabel6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+<<<<<<< HEAD
+=======
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Current Patients");
 
         imageIcon.setForeground(new java.awt.Color(255, 255, 255));
         imageIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+<<<<<<< HEAD
         currentPatientsLabelCount.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         currentPatientsLabelCount.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         currentPatientsLabelCount.setText("0");
+=======
+        jLabel8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("0");
+>>>>>>> origin/master
 
         javax.swing.GroupLayout suppliesPanelCardLayout = new javax.swing.GroupLayout(suppliesPanelCard);
         suppliesPanelCard.setLayout(suppliesPanelCardLayout);
@@ -676,8 +927,13 @@ public class MainMenu extends javax.swing.JFrame {
                         .addComponent(imageIcon))
                     .addGroup(suppliesPanelCardLayout.createSequentialGroup()
                         .addGroup(suppliesPanelCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
                             .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
                             .addComponent(currentPatientsLabelCount, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE)
+                            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> origin/master
                         .addContainerGap())))
         );
         suppliesPanelCardLayout.setVerticalGroup(
@@ -686,7 +942,11 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+<<<<<<< HEAD
                 .addComponent(currentPatientsLabelCount)
+=======
+                .addComponent(jLabel8)
+>>>>>>> origin/master
                 .addGroup(suppliesPanelCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(suppliesPanelCardLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -705,13 +965,24 @@ public class MainMenu extends javax.swing.JFrame {
         destribCardPanel.setPreferredSize(new java.awt.Dimension(194, 180));
 
         jLabel10.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+<<<<<<< HEAD
+=======
+        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("Discharged Patients");
         jLabel10.setToolTipText("");
 
+<<<<<<< HEAD
         dischargedPatientLabelCount.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         dischargedPatientLabelCount.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         dischargedPatientLabelCount.setText("0");
+=======
+        jLabel11.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel11.setText("0");
+>>>>>>> origin/master
 
         javax.swing.GroupLayout destribCardPanelLayout = new javax.swing.GroupLayout(destribCardPanel);
         destribCardPanel.setLayout(destribCardPanelLayout);
@@ -721,7 +992,11 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(destribCardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+<<<<<<< HEAD
                     .addComponent(dischargedPatientLabelCount, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+=======
+                    .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+>>>>>>> origin/master
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, destribCardPanelLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(icon_Discharged, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -733,14 +1008,24 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+<<<<<<< HEAD
                 .addComponent(dischargedPatientLabelCount)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(icon_Discharged, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+=======
+                .addComponent(jLabel11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(icon_Discharged, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+>>>>>>> origin/master
                 .addContainerGap())
         );
 
         jLabel23.setBackground(new java.awt.Color(0, 0, 0));
         jLabel23.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+<<<<<<< HEAD
+=======
+        jLabel23.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         jLabel23.setText("Dashboard");
 
         destribCardPanel1.setBackground(new java.awt.Color(102, 204, 0));
@@ -748,11 +1033,19 @@ public class MainMenu extends javax.swing.JFrame {
         destribCardPanel1.setPreferredSize(new java.awt.Dimension(194, 180));
 
         jLabel14.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+<<<<<<< HEAD
+=======
+        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("Total Medicines");
         jLabel14.setToolTipText("");
 
         jLabel15.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+<<<<<<< HEAD
+=======
+        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel15.setText("0");
 
@@ -778,7 +1071,11 @@ public class MainMenu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel15)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+<<<<<<< HEAD
                 .addComponent(icon_TotalMed, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+=======
+                .addComponent(icon_TotalMed, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+>>>>>>> origin/master
                 .addContainerGap())
         );
 
@@ -787,11 +1084,19 @@ public class MainMenu extends javax.swing.JFrame {
         destribCardPanel2.setPreferredSize(new java.awt.Dimension(194, 180));
 
         jLabel16.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+<<<<<<< HEAD
+=======
+        jLabel16.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setText("Out of Stocks - Medicine");
         jLabel16.setToolTipText("");
 
         jLabel17.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+<<<<<<< HEAD
+=======
+        jLabel17.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel17.setText("0");
 
@@ -817,7 +1122,11 @@ public class MainMenu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel17)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+<<<<<<< HEAD
                 .addComponent(icon_outOfMed, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+=======
+                .addComponent(icon_outOfMed, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+>>>>>>> origin/master
                 .addContainerGap())
         );
 
@@ -826,6 +1135,10 @@ public class MainMenu extends javax.swing.JFrame {
         destribCardPanel3.setPreferredSize(new java.awt.Dimension(194, 180));
 
         jLabel18.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+<<<<<<< HEAD
+=======
+        jLabel18.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel18.setText("Top Cases");
         jLabel18.setToolTipText("");
@@ -845,7 +1158,11 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(destribCardPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane1)
+<<<<<<< HEAD
                     .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE))
+=======
+                    .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, 248, Short.MAX_VALUE))
+>>>>>>> origin/master
                 .addContainerGap())
         );
         destribCardPanel3Layout.setVerticalGroup(
@@ -868,12 +1185,21 @@ public class MainMenu extends javax.swing.JFrame {
                     .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+<<<<<<< HEAD
                             .addComponent(destribCardPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE)
                             .addComponent(suppliesPanelCard, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(destribCardPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 377, Short.MAX_VALUE)
                             .addComponent(destribCardPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 377, Short.MAX_VALUE))
+=======
+                            .addComponent(destribCardPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
+                            .addComponent(suppliesPanelCard, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(destribCardPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
+                            .addComponent(destribCardPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE))
+>>>>>>> origin/master
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(destribCardPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
@@ -914,6 +1240,7 @@ public class MainMenu extends javax.swing.JFrame {
 
         mainCardPanel.add(dashboardPanel, "dashboardCard");
 
+<<<<<<< HEAD
         addAccBtn.setLabel("Add Account");
         addAccBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -962,6 +1289,31 @@ public class MainMenu extends javax.swing.JFrame {
         ) {
             boolean[] canEdit = new boolean [] {
                 false, false, false, false
+=======
+        filterByRequest1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        accountFilterBox.setText("Update");
+
+        addAccBtn.setLabel("Add Account");
+
+        refreshAccTbl.setText("Refresh");
+
+        searchAcc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search_1.png"))); // NOI18N
+
+        searchBoxAcc1.setToolTipText("");
+
+        accountsTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "Count", "User Id", "Name", "Password", "Username", "Action"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, true
+>>>>>>> origin/master
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -969,6 +1321,7 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
         accountsTable.setRowHeight(45);
+<<<<<<< HEAD
         accountsTable.getTableHeader().setReorderingAllowed(false);
         accountsTablePane.setViewportView(accountsTable);
 
@@ -1034,6 +1387,10 @@ public class MainMenu extends javax.swing.JFrame {
         });
         jPanel7.add(lastAccTable);
 
+=======
+        accountsTablePane.setViewportView(accountsTable);
+
+>>>>>>> origin/master
         javax.swing.GroupLayout accountsPanelLayout = new javax.swing.GroupLayout(accountsPanel);
         accountsPanel.setLayout(accountsPanelLayout);
         accountsPanelLayout.setHorizontalGroup(
@@ -1042,6 +1399,7 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(accountsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(accountsPanelLayout.createSequentialGroup()
+<<<<<<< HEAD
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(searchBoxAcc, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1059,12 +1417,33 @@ public class MainMenu extends javax.swing.JFrame {
                     .addComponent(accountsTablePane, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
+=======
+                        .addComponent(filterByRequest1, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(accountFilterBox)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 286, Short.MAX_VALUE)
+                        .addComponent(searchBoxAcc1, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(searchAcc, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, accountsPanelLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(addAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(refreshAccTbl, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+            .addGroup(accountsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(accountsPanelLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(accountsTablePane, javax.swing.GroupLayout.DEFAULT_SIZE, 757, Short.MAX_VALUE)
+                    .addContainerGap()))
+>>>>>>> origin/master
         );
         accountsPanelLayout.setVerticalGroup(
             accountsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, accountsPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(accountsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+<<<<<<< HEAD
                     .addComponent(searchAccBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(searchBoxAcc, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1078,16 +1457,42 @@ public class MainMenu extends javax.swing.JFrame {
                 .addComponent(accountsTablePane, javax.swing.GroupLayout.DEFAULT_SIZE, 381, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+=======
+                    .addComponent(searchAcc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(searchBoxAcc1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(filterByRequest1)
+                    .addComponent(accountFilterBox, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(accountsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(addAccBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(refreshAccTbl, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(424, Short.MAX_VALUE))
+            .addGroup(accountsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, accountsPanelLayout.createSequentialGroup()
+                    .addContainerGap(88, Short.MAX_VALUE)
+                    .addComponent(accountsTablePane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+>>>>>>> origin/master
         );
 
         mainCardPanel.add(accountsPanel, "accountsCard");
 
+<<<<<<< HEAD
+=======
+        filterByRequest2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        accountFilterBox1.setText("Update");
+
+        addAccBtn1.setLabel("Add Account");
+
+>>>>>>> origin/master
         refreshAccTbl1.setText("Refresh");
 
         searchAcc1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search_1.png"))); // NOI18N
 
         searchBoxAcc2.setToolTipText("");
 
+<<<<<<< HEAD
         logsTablePane.setViewportView(null);
 
         logsTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -1117,11 +1522,14 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
+=======
+>>>>>>> origin/master
         javax.swing.GroupLayout logsPanelLayout = new javax.swing.GroupLayout(logsPanel);
         logsPanel.setLayout(logsPanelLayout);
         logsPanelLayout.setHorizontalGroup(
             logsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(logsPanelLayout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGroup(logsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(logsPanelLayout.createSequentialGroup()
                         .addGap(10, 809, Short.MAX_VALUE)
@@ -1137,6 +1545,24 @@ public class MainMenu extends javax.swing.JFrame {
                                 .addComponent(refreshAccTbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(logsTablePane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1036, Short.MAX_VALUE))))
                 .addContainerGap())
+=======
+                .addContainerGap()
+                .addGroup(logsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(logsPanelLayout.createSequentialGroup()
+                        .addComponent(filterByRequest2, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(accountFilterBox1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 286, Short.MAX_VALUE)
+                        .addComponent(searchBoxAcc2, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(searchAcc1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, logsPanelLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(addAccBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(refreshAccTbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))))
+>>>>>>> origin/master
         );
         logsPanelLayout.setVerticalGroup(
             logsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1144,6 +1570,7 @@ public class MainMenu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(logsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(searchAcc1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+<<<<<<< HEAD
                     .addComponent(searchBoxAcc2, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(logsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1151,11 +1578,22 @@ public class MainMenu extends javax.swing.JFrame {
                     .addComponent(viewLog, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(logsTablePane, javax.swing.GroupLayout.DEFAULT_SIZE, 422, Short.MAX_VALUE))
+=======
+                    .addComponent(searchBoxAcc2, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(filterByRequest2)
+                    .addComponent(accountFilterBox1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(logsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(addAccBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(refreshAccTbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(424, Short.MAX_VALUE))
+>>>>>>> origin/master
         );
 
         mainCardPanel.add(logsPanel, "logsCard");
         logsPanel.getAccessibleContext().setAccessibleName("");
 
+<<<<<<< HEAD
         medPanel.setName(""); // NOI18N
 
         filterMedBy.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Status", "Name", "Brand", " " }));
@@ -1341,11 +1779,17 @@ public class MainMenu extends javax.swing.JFrame {
 
         mainCardPanel.add(medPanel, "medCard");
 
+=======
+>>>>>>> origin/master
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         panelsTitles2.setBackground(new java.awt.Color(153, 153, 153));
         panelsTitles2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+<<<<<<< HEAD
+=======
+        panelsTitles2.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         panelsTitles2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         panelsTitles2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/svfclog.png"))); // NOI18N
         panelsTitles2.setText("St. Vincent de Ferrer College of Camarin Inc.");
@@ -1354,6 +1798,10 @@ public class MainMenu extends javax.swing.JFrame {
 
         panelsTitles.setBackground(new java.awt.Color(153, 153, 153));
         panelsTitles.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+<<<<<<< HEAD
+=======
+        panelsTitles.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> origin/master
         panelsTitles.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         panelsTitles.setText("Title");
         panelsTitles.setToolTipText("");
@@ -1397,12 +1845,17 @@ public class MainMenu extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
                     .addComponent(mainCardPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+=======
+                    .addComponent(mainCardPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+>>>>>>> origin/master
                     .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -1412,6 +1865,17 @@ public class MainMenu extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(mainCardPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
+=======
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(mainCardPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+>>>>>>> origin/master
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1435,15 +1899,22 @@ public class MainMenu extends javax.swing.JFrame {
     private void manageRequestsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageRequestsActionPerformed
         panelsTitles.setText("User Logs");
         titlePanel.setBackground(new Color(255, 204, 204));
+<<<<<<< HEAD
         cardLayout.show(mainCardPanel, "logsCard");
+=======
+        cardLayout.show(mainCardPanel, "userlogsCard");
+>>>>>>> origin/master
     }//GEN-LAST:event_manageRequestsActionPerformed
 
     private void dashBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dashBtnActionPerformed
         panelsTitles.setText("Dashboard");
         titlePanel.setBackground(new Color(255, 204, 204));
         cardLayout.show(mainCardPanel, "dashboardCard");
+<<<<<<< HEAD
 
         loadPatientsCount();
+=======
+>>>>>>> origin/master
     }//GEN-LAST:event_dashBtnActionPerformed
 
     private void manageAccActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageAccActionPerformed
@@ -1458,10 +1929,22 @@ public class MainMenu extends javax.swing.JFrame {
         cardLayout.show(mainCardPanel, "patientCard");
     }//GEN-LAST:event_patientBtnActionPerformed
 
+<<<<<<< HEAD
+=======
+    private void filterByRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filterByRequestActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_filterByRequestActionPerformed
+
+    private void addRecordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addRecordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addRecordActionPerformed
+
+>>>>>>> origin/master
     private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
         System.exit(0);
     }//GEN-LAST:event_formWindowClosed
 
+<<<<<<< HEAD
     private void addPatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addPatientActionPerformed
 
         AddingPatient addingPatient = new AddingPatient(null, true, 0, 0);
@@ -2133,6 +2616,11 @@ public class MainMenu extends javax.swing.JFrame {
     public void pack() {
         super.pack(); //To change body of generated methods, choose Tools | Templates.
     }
+=======
+    private void addPatientBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addPatientBtn1ActionPerformed
+     new AddingPatient(null,true).setVisible(true);
+    }//GEN-LAST:event_addPatientBtn1ActionPerformed
+>>>>>>> origin/master
 
     /**
      * @param args the command line arguments
@@ -2173,12 +2661,20 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
     }
+<<<<<<< HEAD
     //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
     // Variables declaration - do not modify//GEN-BEGIN:variables
+=======
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton accountFilterBox;
+    private javax.swing.JButton accountFilterBox1;
+>>>>>>> origin/master
     private javax.swing.JPanel accountsPanel;
     private javax.swing.JTable accountsTable;
     private javax.swing.JScrollPane accountsTablePane;
     private javax.swing.JButton addAccBtn;
+<<<<<<< HEAD
     private javax.swing.JButton addMedBtn;
     private javax.swing.JButton addPatient;
     private javax.swing.JButton changePatientStatusBtn;
@@ -2188,10 +2684,18 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JButton delBtnAcc;
     private javax.swing.JButton delBtnMed;
     private javax.swing.JButton delBtnPatient;
+=======
+    private javax.swing.JButton addAccBtn1;
+    private javax.swing.JButton addPatientBtn1;
+    private javax.swing.JButton addRecord;
+    private javax.swing.JButton dashBtn;
+    private javax.swing.JPanel dashboardPanel;
+>>>>>>> origin/master
     private javax.swing.JPanel destribCardPanel;
     private javax.swing.JPanel destribCardPanel1;
     private javax.swing.JPanel destribCardPanel2;
     private javax.swing.JPanel destribCardPanel3;
+<<<<<<< HEAD
     private javax.swing.JLabel dischargedPatientLabelCount;
     private javax.swing.JButton editBtnAcc;
     private javax.swing.JButton editBtnMed;
@@ -2201,6 +2705,11 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JButton firstAccTable;
     private javax.swing.JButton firstMedTable;
     private javax.swing.JButton firstPatientTable;
+=======
+    private javax.swing.JComboBox<String> filterByRequest;
+    private javax.swing.JComboBox<String> filterByRequest1;
+    private javax.swing.JComboBox<String> filterByRequest2;
+>>>>>>> origin/master
     private javax.swing.JLabel icon_CurrentPati;
     private javax.swing.JLabel icon_Discharged;
     private javax.swing.JLabel icon_TotalMed;
@@ -2210,6 +2719,10 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+<<<<<<< HEAD
+=======
+    private javax.swing.JLabel jLabel11;
+>>>>>>> origin/master
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -2217,19 +2730,27 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+<<<<<<< HEAD
     private javax.swing.JLabel jLabel19;
+=======
+>>>>>>> origin/master
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+<<<<<<< HEAD
+=======
+    private javax.swing.JLabel jLabel8;
+>>>>>>> origin/master
     private javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+<<<<<<< HEAD
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
@@ -2255,11 +2776,20 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JLabel pageAccInfo;
     private javax.swing.JLabel pageMedInfo;
     private javax.swing.JLabel pagePatientInfo;
+=======
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton logBtn;
+    private javax.swing.JPanel logsPanel;
+    private javax.swing.JPanel mainCardPanel;
+    private javax.swing.JButton manageAcc;
+    private javax.swing.JButton manageRequests;
+>>>>>>> origin/master
     private javax.swing.JLabel panelsTitles;
     private javax.swing.JLabel panelsTitles2;
     private javax.swing.JTable patientTable;
     private javax.swing.JScrollPane patientTablePane;
     private javax.swing.JPanel patientsPanel;
+<<<<<<< HEAD
     private javax.swing.JButton previousAccTable;
     private javax.swing.JButton previousMedTable;
     private javax.swing.JButton previousPatientTable;
@@ -2273,20 +2803,37 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JTextField searchBoxAcc2;
     private javax.swing.JTextField searchBoxPatient;
     private javax.swing.JButton searchMedBtn;
+=======
+    private javax.swing.JButton refreshAccTbl;
+    private javax.swing.JButton refreshAccTbl1;
+    private javax.swing.JButton refreshPatientTbl;
+    private javax.swing.JButton searchAcc;
+    private javax.swing.JButton searchAcc1;
+    private javax.swing.JTextField searchBoxAcc1;
+    private javax.swing.JTextField searchBoxAcc2;
+    private javax.swing.JTextField searchBoxPatient;
+>>>>>>> origin/master
     private javax.swing.JButton searchPatientBtn;
     private javax.swing.JButton suppliesBtn;
     private javax.swing.JPanel suppliesPanelCard;
     private javax.swing.JPanel titlePanel;
+<<<<<<< HEAD
     private javax.swing.JButton viewAcc;
     private javax.swing.JButton viewLog;
     private javax.swing.JButton viewMed;
     private javax.swing.JButton viewPatient;
     // End of variables declaration//GEN-END:variables
 //</editor-fold>
+=======
+    private javax.swing.JButton updateFilter;
+    // End of variables declaration//GEN-END:variables
+
+>>>>>>> origin/master
     public void showMessage(String message) {
 
         JOptionPane.showMessageDialog(null, message, "Message", JOptionPane.INFORMATION_MESSAGE);
     }
+<<<<<<< HEAD
 
     public void refreshAccountTable(int pageNumber) {
         int firstResult = (pageNumber - 1) * maxResults;
@@ -2687,4 +3234,6 @@ public class MainMenu extends javax.swing.JFrame {
         return selectedCellValue;
     }
 
+=======
+>>>>>>> origin/master
 }

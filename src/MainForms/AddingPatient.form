@@ -2,7 +2,11 @@
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
   <Properties>
+<<<<<<< HEAD
     <Property name="defaultCloseOperation" type="int" value="0"/>
+=======
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+>>>>>>> origin/master
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -42,8 +46,11 @@
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
+<<<<<<< HEAD
               <Component id="cancel" min="-2" pref="193" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
+=======
+>>>>>>> origin/master
               <Component id="previous" min="-2" pref="193" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
@@ -58,6 +65,7 @@
                   <Component id="jLabel1" alignment="3" min="-2" pref="71" max="-2" attributes="0"/>
                   <Component id="title" alignment="3" min="-2" pref="71" max="-2" attributes="0"/>
               </Group>
+<<<<<<< HEAD
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" pref="357" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
@@ -67,6 +75,14 @@
                       <Component id="previous" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
                       <Component id="cancel" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
                   </Group>
+=======
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" pref="357" max="-2" attributes="0"/>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jPanel5" max="32767" attributes="0"/>
+                  <Component id="previous" alignment="1" min="-2" pref="53" max="-2" attributes="0"/>
+>>>>>>> origin/master
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -137,6 +153,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
                           <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
@@ -167,6 +184,32 @@
                                           <Component id="ageError" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
+=======
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="birthError" max="32767" attributes="0"/>
+                                  <Component id="jLabel3" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="studIDText" alignment="0" pref="309" max="32767" attributes="0"/>
+                                  <Component id="nameText" alignment="0" pref="309" max="32767" attributes="0"/>
+                                  <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel5" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="bdayChooser" alignment="0" pref="309" max="32767" attributes="0"/>
+                                  <Component id="studError" max="32767" attributes="0"/>
+                                  <Component id="nameError" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="yearLevelText" pref="339" max="32767" attributes="0"/>
+                                  <Component id="jLabel7" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel6" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel17" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="sectionText" alignment="1" pref="339" max="32767" attributes="0"/>
+                                  <Component id="ageText" max="32767" attributes="0"/>
+                                  <Component id="ageError" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="yearError" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="sectError" alignment="0" max="32767" attributes="0"/>
+>>>>>>> origin/master
                               </Group>
                               <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
                           </Group>
@@ -179,6 +222,7 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
                                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                                       <Component id="studIDText" min="-2" pref="33" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -195,10 +239,34 @@
                                       <Component id="yearLevelText" min="-2" pref="33" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="yearError" min="-2" pref="14" max="-2" attributes="0"/>
+=======
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="studIDText" min="-2" pref="33" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                                              <Component id="studError" min="-2" pref="14" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="nameText" min="-2" pref="33" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="nameError" min="-2" pref="14" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="yearLevelText" min="-2" pref="33" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="yearError" min="-2" pref="14" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+>>>>>>> origin/master
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="ageText" min="-2" pref="33" max="-2" attributes="0"/>
                                           <Component id="bdayChooser" min="-2" pref="33" max="-2" attributes="0"/>
@@ -209,6 +277,23 @@
                                           <Component id="birthError" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
+=======
+                                      <Component id="ageText" min="-2" pref="33" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="ageError" min="-2" pref="14" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="bdayChooser" min="-2" pref="33" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="birthError" min="-2" pref="14" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+>>>>>>> origin/master
                                       <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="sectionText" min="-2" pref="33" max="-2" attributes="0"/>
@@ -216,7 +301,11 @@
                                       <Component id="sectError" min="-2" pref="14" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
+<<<<<<< HEAD
                               <EmptySpace pref="82" max="32767" attributes="0"/>
+=======
+                              <EmptySpace pref="69" max="32767" attributes="0"/>
+>>>>>>> origin/master
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -227,7 +316,11 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="14" style="0"/>
                         </Property>
+<<<<<<< HEAD
                         <Property name="text" type="java.lang.String" value="Student Id"/>
+=======
+                        <Property name="text" type="java.lang.String" value="STUDENT ID"/>
+>>>>>>> origin/master
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="studIDText">
@@ -237,6 +330,90 @@
                         </Property>
                       </Properties>
                     </Component>
+<<<<<<< HEAD
+=======
+                    <Component class="javax.swing.JLabel" name="jLabel4">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="14" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="NAME"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="nameText">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="14" style="0"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel5">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="14" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="BIRTHDAY"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="ageText">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="14" style="0"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel6">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="14" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="AGE"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel7">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="14" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Year/Level"/>
+                      </Properties>
+                    </Component>
+                    <Component class="com.toedter.calendar.JDateChooser" name="bdayChooser">
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="yearLevelText">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="14" style="0"/>
+                        </Property>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="4">
+                            <StringItem index="0" value="1st Year"/>
+                            <StringItem index="1" value="2nd Year"/>
+                            <StringItem index="2" value="3rd Year"/>
+                            <StringItem index="3" value="4th Year"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel17">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="14" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Section"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="sectionText">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="14" style="0"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+>>>>>>> origin/master
                     <Component class="javax.swing.JLabel" name="studError">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -249,6 +426,7 @@
                         <Property name="text" type="java.lang.String" value="error"/>
                       </Properties>
                     </Component>
+<<<<<<< HEAD
                     <Component class="javax.swing.JLabel" name="jLabel4">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -264,6 +442,8 @@
                         </Property>
                       </Properties>
                     </Component>
+=======
+>>>>>>> origin/master
                     <Component class="javax.swing.JLabel" name="nameError">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -276,11 +456,14 @@
                         <Property name="text" type="java.lang.String" value="error"/>
                       </Properties>
                     </Component>
+<<<<<<< HEAD
                     <Component class="com.toedter.calendar.JDateChooser" name="bdayChooser">
                       <Properties>
                         <Property name="doubleBuffered" type="boolean" value="false"/>
                       </Properties>
                     </Component>
+=======
+>>>>>>> origin/master
                     <Component class="javax.swing.JLabel" name="birthError">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -293,6 +476,7 @@
                         <Property name="text" type="java.lang.String" value="error"/>
                       </Properties>
                     </Component>
+<<<<<<< HEAD
                     <Component class="javax.swing.JLabel" name="jLabel6">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -309,6 +493,8 @@
                         <Property name="enabled" type="boolean" value="false"/>
                       </Properties>
                     </Component>
+=======
+>>>>>>> origin/master
                     <Component class="javax.swing.JLabel" name="ageError">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -321,6 +507,7 @@
                         <Property name="text" type="java.lang.String" value="error"/>
                       </Properties>
                     </Component>
+<<<<<<< HEAD
                     <Component class="javax.swing.JLabel" name="jLabel7">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -366,6 +553,8 @@
                         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                       </AuxValues>
                     </Component>
+=======
+>>>>>>> origin/master
                     <Component class="javax.swing.JLabel" name="yearError">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -378,6 +567,7 @@
                         <Property name="text" type="java.lang.String" value="error"/>
                       </Properties>
                     </Component>
+<<<<<<< HEAD
                     <Component class="javax.swing.JLabel" name="jLabel17">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -393,6 +583,8 @@
                         </Property>
                       </Properties>
                     </Component>
+=======
+>>>>>>> origin/master
                     <Component class="javax.swing.JLabel" name="sectError">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -425,6 +617,7 @@
                 </Constraint>
               </Constraints>
 
+<<<<<<< HEAD
               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                 <Property name="useNullLayout" type="boolean" value="false"/>
               </Layout>
@@ -435,10 +628,40 @@
                       <AbsoluteConstraints x="6" y="34" width="1098" height="-1"/>
                     </Constraint>
                   </Constraints>
+=======
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel13" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel13" min="-2" pref="22" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="jPanel3">
+>>>>>>> origin/master
 
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace pref="194" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -495,12 +718,43 @@
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
+=======
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="bpText" alignment="0" min="-2" pref="309" max="-2" attributes="0"/>
+                                  <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hrText" alignment="0" min="-2" pref="309" max="-2" attributes="0"/>
+                                  <Component id="rrText" alignment="0" min="-2" pref="309" max="-2" attributes="0"/>
+                                  <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="81" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="allergiesText" alignment="0" min="-2" pref="309" max="-2" attributes="0"/>
+                                  <Component id="tempText" alignment="0" min="-2" pref="309" max="-2" attributes="0"/>
+                                  <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="contactTracingText" alignment="0" min="-2" pref="309" max="-2" attributes="0"/>
+                                  <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="187" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="chiefCompText" alignment="0" min="-2" pref="309" max="-2" attributes="0"/>
+                                  <Component id="jLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+>>>>>>> origin/master
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
                               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel8" min="-2" pref="17" max="-2" attributes="0"/>
@@ -561,6 +815,45 @@
                                   </Group>
                               </Group>
                               <EmptySpace pref="34" max="32767" attributes="0"/>
+=======
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="bpText" min="-2" pref="33" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="hrText" min="-2" pref="33" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="tempText" min="-2" pref="33" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="allergiesText" min="-2" pref="33" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="rrText" min="-2" pref="33" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="contactTracingText" min="-2" pref="33" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="chiefCompText" min="-2" pref="33" max="-2" attributes="0"/>
+                              <EmptySpace pref="55" max="32767" attributes="0"/>
+>>>>>>> origin/master
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -571,8 +864,12 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="14" style="0"/>
                         </Property>
+<<<<<<< HEAD
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="BLOOD PREASURE"/>
+=======
+                        <Property name="text" type="java.lang.String" value="BP - BLOOD PREASURE"/>
+>>>>>>> origin/master
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="bpText">
@@ -582,6 +879,7 @@
                         </Property>
                       </Properties>
                     </Component>
+<<<<<<< HEAD
                     <Component class="javax.swing.JLabel" name="bpError">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -595,12 +893,41 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel11">
+=======
+                    <Component class="javax.swing.JLabel" name="jLabel9">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="14" style="0"/>
                         </Property>
+                        <Property name="text" type="java.lang.String" value="HR - HEARTH RATE"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="hrText">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="14" style="0"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel10">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="14" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="RR - RESPIRATORY RATE"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="rrText">
+>>>>>>> origin/master
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="14" style="0"/>
+                        </Property>
+<<<<<<< HEAD
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="TEMPERATURE"/>
+=======
+>>>>>>> origin/master
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="tempText">
@@ -610,6 +937,7 @@
                         </Property>
                       </Properties>
                     </Component>
+<<<<<<< HEAD
                     <Component class="javax.swing.JLabel" name="tempError">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -623,20 +951,31 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel10">
+=======
+                    <Component class="javax.swing.JLabel" name="jLabel11">
+>>>>>>> origin/master
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="14" style="0"/>
                         </Property>
+<<<<<<< HEAD
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="RESPIRATORY RATE"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="rrText">
+=======
+                        <Property name="text" type="java.lang.String" value="TEMP"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="allergiesText">
+>>>>>>> origin/master
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="14" style="0"/>
                         </Property>
                       </Properties>
+<<<<<<< HEAD
                       <AccessibilityProperties>
                         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
                       </AccessibilityProperties>
@@ -658,10 +997,15 @@
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel9">
+=======
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel12">
+>>>>>>> origin/master
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="14" style="0"/>
                         </Property>
+<<<<<<< HEAD
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="text" type="java.lang.String" value="HR - HEARTH RATE"/>
                       </Properties>
@@ -670,11 +1014,26 @@
                       </AccessibilityProperties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="hrText">
+=======
+                        <Property name="text" type="java.lang.String" value="ALLERGIES"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel14">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="14" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="CONTACT TRACING"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="contactTracingText">
+>>>>>>> origin/master
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="14" style="0"/>
                         </Property>
                       </Properties>
+<<<<<<< HEAD
                       <AccessibilityProperties>
                         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
                       </AccessibilityProperties>
@@ -693,6 +1052,8 @@
                       <AccessibilityProperties>
                         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
                       </AccessibilityProperties>
+=======
+>>>>>>> origin/master
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel15">
                       <Properties>
@@ -709,6 +1070,7 @@
                         </Property>
                       </Properties>
                     </Component>
+<<<<<<< HEAD
                     <Component class="javax.swing.JLabel" name="jLabel12">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -817,6 +1179,8 @@
                         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                       </AuxValues>
                     </Component>
+=======
+>>>>>>> origin/master
                   </SubComponents>
                 </Container>
                 <Component class="javax.swing.JLabel" name="jLabel13">
@@ -827,11 +1191,14 @@
                     <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="text" type="java.lang.String" value="VITAL SIGNS"/>
                   </Properties>
+<<<<<<< HEAD
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="6" y="6" width="1098" height="-1"/>
                     </Constraint>
                   </Constraints>
+=======
+>>>>>>> origin/master
                 </Component>
               </SubComponents>
             </Container>
@@ -848,7 +1215,11 @@
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
                               <Component id="jLabel23" alignment="0" max="32767" attributes="0"/>
+=======
+                              <Component id="jLabel23" alignment="0" pref="802" max="32767" attributes="0"/>
+>>>>>>> origin/master
                               <Component id="jPanel4" alignment="1" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -874,6 +1245,7 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -904,6 +1276,41 @@
                                   <Component id="jScrollPane1" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+=======
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jScrollPane1" min="-2" pref="531" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="objectiveText" alignment="1" min="-2" pref="533" max="-2" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jLabel26" min="-2" pref="82" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="jLabel27" alignment="0" pref="531" max="32767" attributes="0"/>
+                                                  <Component id="assestmentText" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="jLabel24" min="-2" pref="82" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="subjectiveText" min="-2" pref="533" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                                  <Component id="jLabel25" min="-2" pref="82" max="-2" attributes="0"/>
+                                  <EmptySpace pref="652" max="32767" attributes="0"/>
+                              </Group>
+>>>>>>> origin/master
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -911,6 +1318,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="3" attributes="0">
@@ -943,6 +1351,30 @@
                                       <Component id="recError" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
+=======
+                              <Component id="objectiveText" min="-2" pref="39" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="subjectiveText" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                                  <Component id="jLabel24" alignment="3" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="assestmentText" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                                  <Component id="jLabel26" alignment="3" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel27" min="-2" pref="26" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" min="-2" pref="104" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="126" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="jLabel25" min="-2" pref="32" max="-2" attributes="0"/>
+                                  <EmptySpace pref="295" max="32767" attributes="0"/>
+>>>>>>> origin/master
                               </Group>
                           </Group>
                       </Group>
@@ -1021,6 +1453,7 @@
                         </Component>
                       </SubComponents>
                     </Container>
+<<<<<<< HEAD
                     <Component class="javax.swing.JLabel" name="objectiveError">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -1069,6 +1502,8 @@
                         <Property name="text" type="java.lang.String" value="error"/>
                       </Properties>
                     </Component>
+=======
+>>>>>>> origin/master
                   </SubComponents>
                 </Container>
                 <Component class="javax.swing.JLabel" name="jLabel23">
@@ -1148,6 +1583,7 @@
         </Component>
       </SubComponents>
     </Container>
+<<<<<<< HEAD
     <Component class="javax.swing.JButton" name="cancel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cancel"/>
@@ -1156,5 +1592,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelActionPerformed"/>
       </Events>
     </Component>
+=======
+>>>>>>> origin/master
   </SubComponents>
 </Form>
